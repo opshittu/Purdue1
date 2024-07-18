@@ -1,0 +1,19 @@
+Installing Apache on an EC2 instance depends on the operating system running on the instance. Here are the general steps for installing Apache on Ubuntu and Amazon Linux:
+
+*Ubuntu:*
+
+1. Update the package index: `sudo apt update`
+2. Install Apache: `sudo apt install apache2`
+3. Start Apache: `sudo systemctl start apache2`
+4. Enable Apache to start automatically on boot: `sudo systemctl enable apache2`
+
+*Amazon Linux:*
+
+1. Update the package index: `sudo yum update -y`
+2. Install Apache: `sudo yum install httpd -y`
+3. Start Apache: `sudo systemctl start httpd`
+4. Enable Apache to start automatically on boot: `sudo systemctl enable httpd`
+
+Once installed and started, you can test Apache by visiting the public IP address of your EC2 instance in a web browser. You should see the Apache test page.
+
+Note: These steps assume a basic understanding of Linux and SSH. If you're new to Linux, you may want to consider consulting additional resources or seeking guidance from an experienced administrator.
